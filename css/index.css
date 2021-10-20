@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(61, 61, 61);
+}
+/* nav */
+#nav{
+    background-color: black;
+  
+}
+#nav img{
+    width: 200px;
+    height: 100px;
+}
+
+/* carousel */
+
+#carousel .content .img1 img{
+    width: 100%;
+    height: 600px;
+   
+
+}
+#carousel{
+   
+    padding: 10px 0;
+}
+#carousel .content{
+    position: relative;
+   
+}
+#carousel .content .contents{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    color: white;
+}
+
+#carousel .content .img img{
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    
+
+}

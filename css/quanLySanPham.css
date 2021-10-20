@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(61, 61, 61);
+}
+/* nav */
+#nav{
+    background-color: black;
+  
+}
+#nav img{
+    width: 200px;
+    height: 100px;
+}
