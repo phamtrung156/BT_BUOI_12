@@ -62,22 +62,23 @@
         </div>
     </header>
     <!-- table sản phẩm -->
-    
-        <div class="tblSanPham container py-3"  id="tblSanPham">
-           
-            <table class="table table-bordered  ">
-                <thead class="thead-light">
-                    <th>Mã </th>
-                    <th>Tên Sản Phẩm</th>
-                    <th>Giá</th>
-                    <th>Hình ảnh</th>
-                    <th>Mô tả</th>
-                    <th>Loại ND</th>
-                    <th>Ngôn ngữ</th>
 
-                </thead>
-                <tbody id="tblDanhSachSP" class="my-3" style="color: white; text-align: center;  "></tbody>
-            </table>
+    <div class="tblSanPham container py-3" id="tblSanPham">
+
+        <table class="table table-bordered  ">
+            <thead class="thead-light">
+                <th>Mã </th>
+                <th>Tên Sản Phẩm</th>
+                <th>Giá</th>
+                <th>Hình ảnh</th>
+                <th>Mô tả</th>
+                <th>Loại ND</th>
+                <th>Ngôn ngữ</th>
+                <th >Chức năng</th>
+
+            </thead>
+            <tbody id="tblDanhSachSP" class="my-3" style="color: white; text-align: center;  "></tbody>
+        </table>
     </div>
     <!-- modal -->
 
@@ -93,41 +94,45 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label>Mã sản phẩm</label>
-                            <input type="text" class="form-control" id="maSp" placeholder="nhập mã sản phẩm...">
-                        </div>
+                    <form >
+
                         <div class="form-group">
                             <label>Tên </label>
-                            <input type="text" class="form-control" id="tenSp" placeholder="nhập tên sản phẩm...">
+                            <input type="text" class="form-control" id="tenSp" placeholder="nhập tên sản phẩm..." >
+                        <div id="tenErr"></div>
                         </div>
                         <div class="form-group">
                             <label>Giá </label>
                             <input type="text" class="form-control" id="giaSp" placeholder="nhập giá sản phẩm...">
+                            <div id="giaErr"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Hình ảnh</label>
+                            <input type="text" class="form-control" id="hinhSp" placeholder="nhập hình ảnh sản phẩm...">
+                            <div id="hinhAnhErr"></div>
                         </div>
                         <div class="form-group">
                             <label>Mô tả</label>
                             <input type="text" class="form-control" id="moTa" placeholder="nhập mô tả sản phẩm...">
+                            <div id="moTaErr"></div>
                         </div>
                         <div class="form-group">
                             <label>Loại nd</label>
-                            <input type="text" class="form-control" id="maSp" placeholder="nhập loai nd sản phẩm...">
+                            <input type="text" class="form-control" id="loaiNd" placeholder="nhập loai nd sản phẩm...">
+                            <div id="loaiErr"></div>
                         </div>
                         <div class="form-group">
                             <label>Ngôn ngữ</label>
-                            <input type="text" class="form-control" id="maSp" placeholder="nhập ngôn ngữ...">
+                            <input type="text" class="form-control" id="ngonNgu" placeholder="nhập ngôn ngữ...">
+                            <div id="ngonNguErr"></div>
                         </div>
-                        <div class="form-group">
-                            <label>Hình ảnh</label>
-                            <input type="text" class="form-control" id="maSp" placeholder="nhập hình ảnh sản phẩm...">
-                        </div>
+
 
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Thêm </button>
+                    <button type="button" onclick="addProduct()" class="btn btn-primary">Thêm </button>
                 </div>
             </div>
         </div>
@@ -144,10 +149,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-        <script src="../js/product.js"></script>
-        <script src="../js/productItem.js"></script>
-        <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/productItem.js"></script>
+    <script src="../js/validation.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
